@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="w-4/5 mx-auto">
+        <div>
+            <h1 class="text-center my-10 text-5xl font-bold ">welcome to our bank</h1>
+            <div class="">
+                <div class="grid grid-cols-3 ">
+                    <div class="bg-blue-500 text-white p-8 rounded-lg mx-4">
+                        <h3 class=" text-2xl  ">deposite</h3>
+                        <h5 class="text-4xl font-medium">$ <span id="total deposite">000</span></h5>
+                    </div>
+                    <div class="bg-yellow-500 text-white p-8 rounded-lg mx-4">
+                        <h3 class=" text-2xl  ">withdraw</h3>
+                        <h5 class="text-4xl font-medium">$ <span id="total withdraw">000</span></h5>
+                    </div>
+                    <div class="bg-green-500 text-white p-8 rounded-lg mx-4">
+                        <h3 class=" text-2xl  ">balance</h3>
+                        <h5 class="text-4xl font-medium">$ <span id="total balance">000</span></h5>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="grid grid-cols-2  mt-5 gap-5  ">
+            <div class="round-lg text-white p-8 bg-green-500">
+             <h3>deposite</h3>
+             <input class="rounded w-3/4 h-8 mt-4 px-3 border-2 border-slate-500 text-black" type="withdraw-input" placeholder="$ please give withdraw money">
+             <button class="text-white bg-blue-500 py-2 px-3 block mt-4" id="diposite-button"> diposite</button>
+            </div>
+            <div class="round-lg text-white p-8 bg-red-200">
+                <h3>withdraw</h3>
+                <input class="rounded w-3/4 h-8 mt-4 px-3 border-2 border-slate-500 text-black" type="withdraw-input" placeholder="$ please give deposite money">
+                <button class="text-white bg-blue-500 py-2 px-3 block mt-4" id="withdraw"> withdraw</button>
+            </div>
+        </div>  
+    </section>
+    
+</body>
+</html>
